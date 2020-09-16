@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS chirpy;
+CREATE DATABASE chirpy;
+USE chirpy;
+
+CREATE TABLE `chirps` (
+
+  -- TABLE CODE TO GO HERE
+ `id` int NOT NULL AUTO_INCREMENT,
+    `author` VARCHAR(255) NOT NULL,
+    `chirp` VARCHAR(255) NOT NULL,
+    `time` TIMESTAMP,
+    PRIMARY KEY(`id`)
+);
