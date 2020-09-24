@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/cb20317c-9beb-4b03-9492-2bc5e89cc530/resourceGroups/RG2/providers/Microsoft.Web/sites/Chirpz",
+    "appService.deploySubpath": ""
+}
