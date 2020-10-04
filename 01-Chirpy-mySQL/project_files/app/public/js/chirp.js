@@ -22,11 +22,9 @@ $.get("/api/all", function (data) {
 
 });
 
-// When user chirps (clicks addBtn)
 $("#chirp-submit").on("click", function (event) {
   event.preventDefault();
 
-  // Make a newChirp object
   var newChirp = {
     author: $("#author").val().trim(),
     chirp: $("#chirp-box").val().trim(),
@@ -35,9 +33,7 @@ $("#chirp-submit").on("click", function (event) {
 
   console.log(newChirp);
 
-  // Send an AJAX POST-request with jQuery
   $.post("/api/new", newChirp)
-    // On success, run the following code
     .then(function () {
 
       var row = $("<div>");
@@ -51,7 +47,6 @@ $("#chirp-submit").on("click", function (event) {
 
     });
 
-  // Empty each input box by replacing the value with an empty string
   $("#author").val("");
   $("#chirp-box").val("");
 });
